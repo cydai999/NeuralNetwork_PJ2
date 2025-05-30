@@ -1,0 +1,3 @@
+[Train]Total training time:705.2488746643066
+[Train]Training epochs:180
+[Test]Accuracy:91.3000

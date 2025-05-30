@@ -1,0 +1,5 @@
+.idea/
+*.pdf
+*.pth
+log_data/
+/__pycache__/
