@@ -50,9 +50,9 @@ tensorboard
 
 #### 1.2 数据集与模型
 
-本项目所用数据集为CIFAR-10，可在 https://drive.google.com/file/d/1Aa3cNUeZRvHtqlX5C0dAhq2_fbjsyyWC/view?usp=drive_link 下载`cifar-10-python.tar.gz`文件， 下载后需放在`NeuralNetwork_PJ2\data`下（需新建目录`data`）。
+本项目所用数据集为CIFAR-10，可在 https://drive.google.com/file/d/1Aa3cNUeZRvHtqlX5C0dAhq2_fbjsyyWC/view?usp=drive_link 下载`cifar-10-python.tar.gz`文件， 下载后需放在`NeuralNetwork_PJ2/data`下（需新建目录`data`）。
 
-模型文件的下载链接为 https://drive.google.com/file/d/1c9kHG7qxXmTzuGcXkbqHC7HvMizcIzW8/view?usp=drive_link ，下载后需放在`NeuralNetwork_PJ2\codes\Task1`下。
+模型文件的下载链接为 https://drive.google.com/file/d/1c9kHG7qxXmTzuGcXkbqHC7HvMizcIzW8/view?usp=drive_link ，下载后需放在`NeuralNetwork_PJ2/codes/Task1`下。
 
 准备完毕后文件结构应基本同前述项目架构一致。
 
@@ -63,7 +63,7 @@ tensorboard
 首先转移到Task1目录下：
 
 ```
-cd Task1
+cd NeuralNetwork_PJ2/codes/Task1
 ```
 
 想要从头开始训练ResNet-18模型，可以输入：
@@ -86,7 +86,7 @@ python train.py --num_workers 0
 python train_resnet20.py
 ```
 
-训练完成后在`Task1\work_dir`目录下会出现以时间戳为名的文件夹， 其中应包含如下文件：训练日志`log.json`，模型架构文件`model_architecture.txt`，训练结果`result.txt`，模型参数`best_model.pth`以及一个tensorboard输出文件`events.out...`。
+训练完成后在`Task1/work_dir`目录下会出现以时间戳为名的文件夹， 其中应包含如下文件：训练日志`log.json`，模型架构文件`model_architecture.txt`，训练结果`result.txt`，模型参数`best_model.pth`以及一个tensorboard输出文件`events.out...`。
 
 ##### 1.3.2 评估
 
@@ -99,7 +99,7 @@ python eval.py
 注意：如果想要评估模型文件在其他位置，需要输入模型路径：
 
 ```
-python eval.py --model_path {YOUR\PATH\TO\MODEL}
+python eval.py --model_path {YOUR/PATH/TO/MODEL}
 ```
 
 #### 1.4 可视化
@@ -107,7 +107,7 @@ python eval.py --model_path {YOUR\PATH\TO\MODEL}
 若想可视化训练过程，可以在终端使用tensorboard：
 
 ```
-tensorboard --logdir={LOG\DIR}    # events.out...文件所在目录
+tensorboard --logdir={LOG/DIR}    # events.out...文件所在目录
 ```
 
 
@@ -124,10 +124,10 @@ tensorboard --logdir={LOG\DIR}    # events.out...文件所在目录
 
 #### 2.3 训练
 
-首先转移到Task2目录下：
+首先转移到Task2/VGG_Batchnorm目录下：
 
 ```
-cd ../Task2
+cd NeuralNetwork_PJ2/codes/Task2/VGG_Batchnorm
 ```
 
 想要训练VGG模型，可以直接在终端输入：
